@@ -1,0 +1,10 @@
+FROM ubuntu:16.04
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y curl
+
+COPY curler.sh .
+
+RUN chmod a+rx /app/curler.sh
+
