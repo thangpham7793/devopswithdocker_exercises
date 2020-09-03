@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+  # service name
+  youtube-dl-ubuntu:
+    # docker hub link
+    image: thangpham7793/youtube-dl
+    # path to Dockerfile
+    build: .
+    # - host:container (volume bind mounts)
+    volumes:
+      - .:/mydir
+    container_name: youtube-dl
