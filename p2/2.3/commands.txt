@@ -1,0 +1,5 @@
+#server
+docker run -d --rm -it -p8000:8000 server
+
+#frontend
+docker run -d --rm -it -p5000:5000 frontend
